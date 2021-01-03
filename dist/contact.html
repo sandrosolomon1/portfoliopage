@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+  <header id="work-header">
+    <div class="container">
+        <nav id="main-nav">
+            <img src="./img/logo.png" alt="logo" id="logo">
+            <ul class="tabs">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li class="live-tab"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="border-top"></div>
+
+<div class="container">
+  <section class="contact">
+    <h1>CONTACT ME</h1>
+    <p>Here is how you can reach me</p>
+    <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+      <div class="inputs">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="text" name="subject" id="subject" placeholder="Subject">
+        <input type="number" name="phone" id="phone" placeholder="Phone Number">
+        <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+        <div data-netlify-recaptcha="true"></div>
+      </div>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </section>
+</div>
+
+<section class="contact-info">
+  <div class="container">
+    <div class="card">
+      <i class="fas fa-envelope fa-2x"></i>
+      <h3>EMAIL</h3>
+      <span>sandroqoiava7@gmail.com</span>
+    </div>
+    <div class="card">
+      <i class="fas fa-phone fa-2x"></i>
+      <h3>PHONE</h3>
+      <span>+995-592-01-00-02</span>
+    </div>
+    <div class="card">
+      <i class="fas fa-address-card fa-2x"></i>
+      <h3>LOCATION</h3>
+      <span>Georgia/Tbilisi</span>
+    </div>
+  </div>
+</section>
+
+<section class="cooltext">
+  <div class="background"></div>
+  <div class="container">
+    <h1>Let's <a href="#work-header"><span id="cool-text">Start</span></a> Your Next Project</h1>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+      <span>Copyright © 2019. All Rights Reserved            </span>
+      <div class="socials">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

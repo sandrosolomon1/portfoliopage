@@ -1,0 +1,35 @@
+@import "config";
+
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  background: $light-color;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+  &:hover {
+    background: $main-color;
+  }
+}
+
+%under-line {
+  height: 2px;
+  background: $main-color;
+  display: block;
+  width: 3rem;
+  margin: 0.5rem auto 0 auto;
+}
+
+%underLine {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 0;
+
+  &::after {
+    content: "";
+    @extend %under-line;
+  }
+}
